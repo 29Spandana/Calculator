@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    #spandana {
+        background-image:url(./calc.jpg) ;
+        height: fit-content;
+        width: fit-content;
+        padding: 25px;
+    }
+</style>
+<body style="background-color: rgb(218, 10, 34);">
+    
+    <center>
+        <div style="border-radius: 20px; border: solid rgb(173, 226, 14);
+        margin-top: 100px; box-shadow:  25px 45px rgb(214, 153, 30);" id="spandana">
+        <h1 style="color: yellow;">MY CALCULATOR</h1>
+        <br>
+        <div>
+            <label style="color: yellow;" for="">VALUE1</label><br>
+            <input type="number" name="" id="VALUE1">
+            <br>
+        </div>
+        <div>
+            <label style="color: yellow;" for="">VALUE2</label><br>
+            <input type="number" name="" id="VALUE2">
+            <br>
+        </div>
+        <br>
+            <button style="cursor: pointer;" onclick="calculator('+')">Addition</button>
+            <button style="cursor: pointer;" onclick="calculator('-')">Subtraction</button>
+            <button style="cursor: pointer;" onclick="calculator('*')">Multiplication</button>
+            <button style="cursor: pointer;" onclick="calculator('/')">Division</button>
+            <h1 style="color: yellow;" id ="show">Total</h1>
+            <button onclick="window.location.reload();">REFRESH</button>
+        </div>
+    </center>
+    <script src="./calculator1.js"></script>
+</body>
+</html>
